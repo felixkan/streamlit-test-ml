@@ -2,8 +2,6 @@
 """
 Created on Sun Dec 12 22:39:29 2021
 
-@author: Philip Kane
-
 Project: streamlit-test
 
 # conda activate genius
@@ -28,7 +26,7 @@ def predict(x1, x2, x3):
     X_new = np.reshape(X_new, (1, -1))
     
     # load model
-    filename = r"static\model.pkl"
+    filename = r"model.pkl"
     [loaded_model, feature_names] = pickle.load(open(filename, 'rb'))
     
     # obtain PD predictions    
